@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('stop'){
             steps{
-                sh 'docker rm -f syallbus_app'
+                sh 'docker rm -f syallbus_app && echo "container removed" || echo "container does not exist"'
             }
         }
 
