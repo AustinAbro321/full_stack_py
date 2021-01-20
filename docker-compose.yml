@@ -3,6 +3,7 @@ version: "3.9"
 services:
   web:
     build: .
+    image: full_stack_py
     command: python3 manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/code
