@@ -8,7 +8,7 @@ pipeline {
                 sh 'docker-compose up -d --build'       
                 sh 'python3 --version'
                 sh 'pip3 freeze'   
-                sh 'python manage.py runserver 0.0.0.0:8000'      
+                sh 'python3 manage.py runserver 0.0.0.0:8000'      
             }
         }
     }
